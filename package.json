@@ -1,18 +1,25 @@
 {
   "name": "jsboopper",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a test project for Azure functions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crostonj/JSBoopper.git"
+  },
+  "author": "Jeff Croston(crostonj@gmail.com)",
   "license": "ISC",
   "dependencies": {
-    "azure-queue-node": "^1.1.0",
+    "ajv": "^6.5.3",
     "azure-storage": "^2.10.1",
     "body-parser": "^1.18.3",
     "eslint": "^5.5.0",
+    "mongodb": "^3.1.4",
+    "mongoose": "^5.2.14",
+    "mongoose-unique-validator": "^2.0.1",
     "underscore": "^1.9.1"
   }
 }

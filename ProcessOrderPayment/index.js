@@ -11,7 +11,7 @@ module.exports = function (context, req) {
         product : req.body.product,
         price : req.body.price,
         email : req.body.email,
-        Name : req.body.name
+        name : req.body.name
         
     };
 
