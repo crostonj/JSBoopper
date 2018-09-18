@@ -22,3 +22,5 @@ project.lock.json
 appsettings.json
 local.settings.json
 node_modules
+coverage
+.nyc_output

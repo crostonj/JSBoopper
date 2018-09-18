@@ -4,7 +4,7 @@
   "description": "This is a test project for Azure functions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,9 @@
     "mongoose": "^5.2.14",
     "mongoose-unique-validator": "^2.0.1",
     "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
   }
 }

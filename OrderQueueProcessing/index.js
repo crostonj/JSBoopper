@@ -28,12 +28,21 @@ module.exports = async function (context, myQueueItem) {
             if (err) {
                 context.log("Error saving order");
                 context.log(err);
-                
             }
             context.log("Order saved to database"); 
+            context.res = {
+                status: 200,
+                body: "Successfully processed order for " + order.name
+            }
         });
 
+
     }).catch((err) => {
-            console.log(err);
+        console.log(err);
+
+        context.res = {
+            status : 500,
+            body : err
+        }
     });
 }
