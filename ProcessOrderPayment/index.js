@@ -20,6 +20,10 @@ module.exports = function (context, req) {
     var queueSvc3 = azure.createQueueService();
     const QueueMessageEncoder = azure.QueueMessageEncoder;
 
+    for(var i = 0; i++; i < 5){
+        Console.log(i);
+    }
+
     queueSvc.messageEncoder = new QueueMessageEncoder.TextBase64QueueMessageEncoder();
     queueSvc2.messageEncoder = new QueueMessageEncoder.TextBase64QueueMessageEncoder();
     queueSvc3.messageEncoder = new QueueMessageEncoder.TextBase64QueueMessageEncoder();
