@@ -16,7 +16,6 @@ module.exports = function (context, req) {
     };
 
     var queueSvc = azure.createQueueService();
-    var queueSvc2 = azure.createQueueService();
     var queueSvc3 = azure.createQueueService();
     const QueueMessageEncoder = azure.QueueMessageEncoder;
 
@@ -25,7 +24,6 @@ module.exports = function (context, req) {
     }
 
     queueSvc.messageEncoder = new QueueMessageEncoder.TextBase64QueueMessageEncoder();
-    queueSvc2.messageEncoder = new QueueMessageEncoder.TextBase64QueueMessageEncoder();
     queueSvc3.messageEncoder = new QueueMessageEncoder.TextBase64QueueMessageEncoder();
 
     var queueName = "boopperorderqueue";
